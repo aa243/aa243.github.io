@@ -1,0 +1,206 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>NOIP2021 | aa243</title><meta name="keywords" content="OI,aa243"><meta name="author" content="aa243"><meta name="copyright" content="aa243"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="This is my reflection on NOIP 2021.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="NOIP2021">
+<meta property="og:url" content="http://example.com/2021/12/24/NOIP2021/index.html">
+<meta property="og:site_name" content="aa243">
+<meta property="og:description" content="This is my reflection on NOIP 2021.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/img/cover/13.png">
+<meta property="article:published_time" content="2021-12-24T10:00:00.000Z">
+<meta property="article:modified_time" content="2021-12-24T10:31:55.362Z">
+<meta property="article:author" content="aa243">
+<meta property="article:tag" content="OI">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/img/cover/13.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2021/12/24/NOIP2021/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isanchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'NOIP2021',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2021-12-24 18:31:55'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if (GLOBAL_CONFIG_SITE.isHome && /iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('/img/cover/13.png')"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">aa243</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> Home</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> Archives</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div><div class="menus_item"><a class="site-page" href="javascript:void(0);"><i class="fa-fw fas fa-list"></i><span> List</span><i class="fas fa-chevron-down expand"></i></a><ul class="menus_item_child"><li><a class="site-page child" href="/music/"><i class="fa-fw fas fa-music"></i><span> Music</span></a></li><li><a class="site-page child" href="/movies/"><i class="fa-fw fas fa-video"></i><span> Movie</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> Link</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> About</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">NOIP2021</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2021-12-24T10:00:00.000Z" title="发表于 2021-12-24 18:00:00">2021-12-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2021-12-24T10:31:55.362Z" title="更新于 2021-12-24 18:31:55">2021-12-24</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/OI/">OI</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="NOIP2021"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="NOIP-2021"><a href="#NOIP-2021" class="headerlink" title="NOIP 2021"></a>NOIP 2021</h2><p>写这篇文章时距离 NOIP 结束大概已经有两个多礼拜了。该出的成绩也都出来了，写这篇文章一方面是对之前的 OI 生涯的一些总结，另一方面也是对自己未来的一些展望。</p>
+<p>因为 CSP-S 考的还不错，NOIP 前停课了一个多礼拜。长时间一个人呆在家里做题，其实是一件挺累的事情。加上模拟赛又越打越烂，可能到 NOIP 前的几天自己都不太有斗志了，做题量也从第一天的一天八道题变成最后几天的一天三四道。现在想想，停课到底是起了正面还是负面作用也很难说，不过总归是一段不受干扰可以只做自己的事情的经历。</p>
+<p>在考场外面等着进去的时候还是挺开心的，因为发现自己的考场里都是那些省队的大佬，难免产生一种自己也已经可以名列其中的错觉。然而之后的 NOIP 很快就把我拖回了现实。第一题想到了正解结果去打了另一个很扯淡的解法，大概在大样例上调了一个小时才发现做法假了，然后再回来做正解，大概两个小时的时候才做完第一题。做完后出去上了趟厕所，感觉心态已经崩了。回来后就开始神志不清，明知道 T2 的暴力得用状压然后就是不写，试图通过乱搞骗到 T3 的分。结果搞了一个多小时后还是只能过小样例，算法正确性还不能保证。剩下的一个小时里只能匆忙地打完极其复杂的 T4 和明知道不可能有分的 T2 的暴力，最后这两题成功爆零。</p>
+<p>现在再去回忆考场上的经历，好像也没什么感觉。毕竟从结果来看还算不错，以稀烂的发挥依然压线拿到了省一，大概也能算运气不错吧？其实所谓的发挥稀烂也就是少打了暴力的三四十分，就算拿到这些分又能改变什么呢？归根结底，没有达到恰当的水平，就去要求这种成绩，是不可能的。</p>
+<p>应当认识到自己和真正的大佬之间的差距。从大概一年前完全对 OI，对自己的水平，以及对大佬的水平完全没有概念，到现在，至少能明白现存的差距，实在是一种让人欣慰的进步。</p>
+<p>客观来说，我的 OI 生涯，至少在高中阶段，大概是到此为止了。可能之后还会参加一些比赛，但是希望已经没有了。既然已经没有希望，那么参加比赛也只是一种形式而已。回望过去的几个月里，从一个啥都不会的新手逐渐提升到现在的水平，其实也还不错吧？还记得去年期中考前无人的机房里一个人调试着一个对当时的我来说太过困难的程序（好像到现在我都没有通过那道题），也记得洛谷上第一次 AC 但是无人言述的喜悦。洛谷上到目前为止的 1190 次的提交、357 次的 AC、334 的咕值，是我在每一个日夜里的付出所积累所成的，它们对于我意义重大。我不知道是否应当称之为一种奋斗，但我的确在 OI 上付出了前所未有的努力。</p>
+<p>可能上面说的有些太悲观了。其实我想表述的只是，我不再将目标放在高中阶段。信息竞赛的一个优点就是，即使你没能在高中阶段取得成绩，你依然可以参加 ICPC。一种希望可能没有了，但希望总是在那里。之后我依然会继续学习 OI 内容，只是不会花这么多时间，并且会暂时将重心放到 ATCoder 上。</p>
+<p>应当继续努力。</p>
+<h2 id="后记"><a href="#后记" class="headerlink" title="后记"></a>后记</h2><p>在平安夜这天将这篇文章传到博客上来，距离写完这篇文章又过了大约三个礼拜。虽然上面说了要转战 ATCoder，但实际上这段时间基本就没做啥题。感觉考完 NOIP 后原神就占据了大部分课余的时间。一张一弛当然是有必要的，但一旦放松了之后能否再重新回到认真学习的状态也是个问题。</p>
+<p>可能要等到寒假才能重新开始 OI 学习，但那时候距离冬令营开始又没有多少时间了。游戏、OI、文化课之间的平衡已经确实成为了一种问题，放弃游戏似乎是必需的。</p>
+<p>不管怎样，圣诞快乐！</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a target="_blank" rel="noopener" href="https://aa243.github.io">aa243</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://example.com/2021/12/24/NOIP2021/">http://example.com/2021/12/24/NOIP2021/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">aa243版权所有</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/OI/">OI</a></div><div class="post_share"><div class="social-share" data-image="/img/cover/13.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2021/11/21/wqs-%E4%BA%8C%E5%88%86/"><img class="next-cover" src="/img/cover/11.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">wqs 二分</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2021/09/01/Luogu P4785/" title="洛谷P4785 交换 题解"><img class="cover" src="/img/cover/3.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-01</div><div class="title">洛谷P4785 交换 题解</div></div></a></div><div><a href="/2021/09/14/Luogu P5677/" title="Luogu P5677 配对统计 题解"><img class="cover" src="/img/cover/5.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-14</div><div class="title">Luogu P5677 配对统计 题解</div></div></a></div><div><a href="/2021/09/14/y-fast-trie-1/" title="洛谷卡常记"><img class="cover" src="/img/cover/6.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-09-14</div><div class="title">洛谷卡常记</div></div></a></div><div><a href="/2021/10/10/Luogu-P6018/" title="Fusion Tree 题解"><img class="cover" src="/img/cover/8.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-10</div><div class="title">Fusion Tree 题解</div></div></a></div><div><a href="/2021/10/29/2021CSP-S游记/" title="2021CSP-S游记"><img class="cover" src="/img/cover/12.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-10-29</div><div class="title">2021CSP-S游记</div></div></a></div><div><a href="/2021/11/21/wqs-二分/" title="wqs 二分"><img class="cover" src="/img/cover/11.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-21</div><div class="title">wqs 二分</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="/img/avatar.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">aa243</div><div class="author-info__description">Shoot for the moon; even if you miss, you will land among the stars.</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">10</div></a></div><div class="card-info-data-item is-center"><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a></div><div class="card-info-data-item is-center"><a href="/categories/"><div class="headline">分类</div><div class="length-num">2</div></a></div></div><a class="button--animated" id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#NOIP-2021"><span class="toc-number">1.</span> <span class="toc-text">NOIP 2021</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%8E%E8%AE%B0"><span class="toc-number">2.</span> <span class="toc-text">后记</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2021/12/24/NOIP2021/" title="NOIP2021"><img src="/img/cover/13.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="NOIP2021"/></a><div class="content"><a class="title" href="/2021/12/24/NOIP2021/" title="NOIP2021">NOIP2021</a><time datetime="2021-12-24T10:00:00.000Z" title="发表于 2021-12-24 18:00:00">2021-12-24</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/11/21/wqs-%E4%BA%8C%E5%88%86/" title="wqs 二分"><img src="/img/cover/11.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="wqs 二分"/></a><div class="content"><a class="title" href="/2021/11/21/wqs-%E4%BA%8C%E5%88%86/" title="wqs 二分">wqs 二分</a><time datetime="2021-11-21T07:22:58.000Z" title="发表于 2021-11-21 15:22:58">2021-11-21</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/29/2021CSP-S%E6%B8%B8%E8%AE%B0/" title="2021CSP-S游记"><img src="/img/cover/12.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="2021CSP-S游记"/></a><div class="content"><a class="title" href="/2021/10/29/2021CSP-S%E6%B8%B8%E8%AE%B0/" title="2021CSP-S游记">2021CSP-S游记</a><time datetime="2021-10-29T15:51:46.000Z" title="发表于 2021-10-29 23:51:46">2021-10-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/10/10/Luogu-P6018/" title="Fusion Tree 题解"><img src="/img/cover/8.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Fusion Tree 题解"/></a><div class="content"><a class="title" href="/2021/10/10/Luogu-P6018/" title="Fusion Tree 题解">Fusion Tree 题解</a><time datetime="2021-10-10T13:59:46.000Z" title="发表于 2021-10-10 21:59:46">2021-10-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2021/09/14/Luogu%20P5677/" title="Luogu P5677 配对统计 题解"><img src="/img/cover/5.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Luogu P5677 配对统计 题解"/></a><div class="content"><a class="title" href="/2021/09/14/Luogu%20P5677/" title="Luogu P5677 配对统计 题解">Luogu P5677 配对统计 题解</a><time datetime="2021-09-14T09:13:49.000Z" title="发表于 2021-09-14 17:13:49">2021-09-14</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By aa243</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script>if (!window.MathJax) {
+  window.MathJax = {
+    tex: {
+      inlineMath: [ ['$','$'], ["\\(","\\)"]],
+      tags: 'ams'
+    },
+    chtml: {
+      scale: 1.2
+    },
+    options: {
+      renderActions: {
+        findScript: [10, doc => {
+          for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
+            const display = !!node.type.match(/; *mode=display/)
+            const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
+            const text = document.createTextNode('')
+            node.parentNode.replaceChild(text, node)
+            math.start = {node: text, delim: '', n: 0}
+            math.end = {node: text, delim: '', n: 0}
+            doc.math.push(math)
+          }
+        }, ''],
+        insertScript: [200, () => {
+          document.querySelectorAll('mjx-container:not\([display]\)').forEach(node => {
+            const target = node.parentNode
+            if (target.nodeName.toLowerCase() === 'li') {
+              target.parentNode.classList.add('has-jax')
+            } else {
+              target.classList.add('has-jax')
+            }
+          });
+        }, '', false]
+      }
+    }
+  }
+  
+  const script = document.createElement('script')
+  script.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+  script.id = 'MathJax-script'
+  script.async = true
+  document.head.appendChild(script)
+} else {
+  MathJax.startup.document.state(0)
+  MathJax.texReset()
+  MathJax.typeset()
+}</script></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
